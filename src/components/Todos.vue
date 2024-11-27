@@ -19,7 +19,7 @@ function listTodos() {
 
 function createTodo() {
   client.models.Todo.create({
-    content: window.prompt("Todo content")
+    content: window.prompt("Todo content 1234")
   }).then(() => {
     // After creating a new todo, update the list of todos
     listTodos();
