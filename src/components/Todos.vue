@@ -25,6 +25,12 @@ function createTodo() {
     listTodos();
   });
 }
+
+function sayHelloInLambda() {
+  client.queries.testFunction({
+    name: "Amplify",
+  })
+}
     
 // fetch todos when the component is mounted
  onMounted(() => {
@@ -50,6 +56,7 @@ function createTodo() {
       <a href="https://docs.amplify.aws/gen2/start/quickstart/nextjs-pages-router/">
         Review next steps of this tutorial.
       </a>
+      <button @click="sayHelloInLambda">Click me!</button>
     </div>
   </main>
 </template>
